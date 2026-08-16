@@ -1,17 +1,17 @@
 @extends('layouts.app') 
-@section('title', $title) 
-@section('subtitle', $subtitle) 
+@section('title', $viewData['title']) 
+@section('subtitle', $viewData['subtitle']) 
 @section('content') 
 <div class="container"> 
   <div class="row"> 
     <div class="col-lg-4 ms-auto"> 
-      <p class="lead">{{ $Name }}</p> 
+      <p class="lead">{{ $viewData['Name'] }}</p> 
     </div> 
     <div class="col-lg-4 me-auto"> 
-      <p class="lead">{{ $Address }}</p> 
+      <p class="lead">{{ $viewData['Address'] }}</p> 
     </div> 
      <div class="col-lg-4 me-auto"> 
-      <p class="lead">{{ $Phone }}</p> 
+      <p class="lead">{{ $viewData['Phone'] }}</p> 
     </div> 
   </div> 
 </div> 
